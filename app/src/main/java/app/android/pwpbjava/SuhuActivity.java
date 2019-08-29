@@ -2,6 +2,7 @@ package app.android.pwpbjava;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -12,13 +13,20 @@ public class SuhuActivity extends AppCompatActivity {
 
     EditText eCelcius;
     TextView kelvin, reamur,fahrenheit;
-    Button btnKonversi;
+    Button btnKonversi,hello;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_suhu);
 
+        hello = (Button)findViewById(R.id.hello);
+        hello.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(SuhuActivity.this,CalculatorDua.class));
+            }
+        });
         eCelcius = (EditText)findViewById(R.id.eSuhu);
         kelvin = (TextView) findViewById(R.id.kelvin);
         fahrenheit = (TextView) findViewById(R.id.fahrenheit);

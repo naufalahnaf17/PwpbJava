@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".CalculatorDua">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:id="@+id/txtPenampung"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="30dp"
+            android:text="Halo"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <GridLayout
+            android:id="@+id/angkaSemua"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="40dp"
+            android:columnCount="4"
+            android:rowCount="4">
+
+            <Button
+                android:id="@+id/tujuh"
+                android:layout_width="80dp"
+                android:text="7" />
+
+            <Button
+                android:id="@+id/delapan"
+                android:layout_width="80dp"
+                android:text="8" />
+
+            <Button
+                android:id="@+id/sembilan"
+                android:layout_width="80dp"
+                android:text="9" />
+
+            <Button
+                android:id="@+id/tambah"
+                android:layout_width="80dp"
+                android:text="+" />
+
+            <Button
+                android:id="@+id/empat"
+                android:layout_width="80dp"
+                android:text="4" />
+
+            <Button
+                android:id="@+id/lima"
+                android:layout_width="80dp"
+                android:text="5" />
+
+            <Button
+                android:id="@+id/enam"
+                android:layout_width="80dp"
+                android:text="6" />
+
+            <Button
+                android:id="@+id/kurang"
+                android:layout_width="80dp"
+                android:text="-" />
+
+            <Button
+                android:id="@+id/satu"
+                android:layout_width="80dp"
+                android:text="1" />
+
+            <Button
+                android:id="@+id/dua"
+                android:layout_width="80dp"
+                android:text="2" />
+
+            <Button
+                android:id="@+id/tiga"
+                android:layout_width="80dp"
+                android:text="3" />
+
+            <Button
+                android:id="@+id/kali"
+                android:layout_width="80dp"
+                android:text="*" />
+
+            <Button
+                android:layout_width="80dp"
+                android:visibility="invisible" />
+
+            <Button
+                android:layout_width="80dp"
+                android:visibility="invisible" />
+
+            <Button
+                android:id="@+id/nol"
+                android:layout_width="80dp"
+                android:text="0"/>
+
+            <Button
+                android:id="@+id/bagi"
+                android:layout_width="80dp"
+                android:text="/" />
+
+        </GridLayout>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/hasilnya"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="="
+        android:layout_gravity="center"/>
+
+</LinearLayout>
